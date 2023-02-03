@@ -151,7 +151,7 @@ form.onsubmit = (event) => {
 		inpTop.style.borderColor = 'red'
 	} else {
 
-	
+	inpTop.style.borderColor = '#007FFF'
 	let todo = {
 		id: Math.random(),
 		completed: false,
