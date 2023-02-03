@@ -10,6 +10,7 @@ form input {
     padding: 10px 20px;
     border-radius: 10px;
     border: 2px solid #007FFF;
+    outline: none;
 }
 
 form button {
