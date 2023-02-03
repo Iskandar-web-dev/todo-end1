@@ -86,6 +86,7 @@ const reload = (arr) => {
 		let task = document.createElement('p')
 		let hour = document.createElement('p')
 		img2.onclick = () => {
+			back.style.transition = '.5s ease'
 			back.style.display = "block"
 			reload(todos)
 		}
@@ -148,10 +149,12 @@ console.log(inpTop);
 form.onsubmit = (event) => {
 	event.preventDefault();
 	if (inpTop.value.length === 0) {
+		inpTop.style.transition = '.5s ease'
 		inpTop.style.borderColor = 'red'
 	} else {
-
+	
 	inpTop.style.borderColor = '#007FFF'
+	inpTop.style.transition = '.5s ease'
 	let todo = {
 		id: Math.random(),
 		completed: false,
@@ -169,7 +172,6 @@ form.onsubmit = (event) => {
 	reload(todos)
 }
 };
-
 
 
 
